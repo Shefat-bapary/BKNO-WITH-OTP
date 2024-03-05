@@ -56,6 +56,7 @@ document.getElementById('verify-pin').addEventListener('click', function(){
     if(typedNumber === currentPin){
         pinSuccessMessage.style.display = 'block';
         pinFailureMessage.style.display = 'none';
+        window.location.assign("bank.html")
     }
     else{
         pinFailureMessage.style.display = 'block';
